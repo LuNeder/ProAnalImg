@@ -23,6 +23,9 @@
               "Plots"
               "PlotThemes"
               "Gtk4"
+              "StatsBase"
+              "VideoIO"
+              "OpenCV"
             ])
           pkgs.gtk4
           pkgs.glib

@@ -40,6 +40,7 @@ vec = zeros((dims[2]))
 for i in 1:dims[2]
     vec[i] = img[linha,i]
 end
+# Possível melhoria: vec[:] = img[linha,:]
 
 # 5) Plot do gráfico
 p = plot(vec,
