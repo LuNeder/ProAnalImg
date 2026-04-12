@@ -9,7 +9,7 @@ orig = load(img_path)
 # 1) Gera a Imagem
 size = 512 # Tamanho da imagem
 
-img = ones(Float64, 512, 512) # Criar imagem base
+img = ones(Float64, size, size) # Criar imagem base
 
 sqr = div(size, 2) # Tamaho de cada quadrado
 
