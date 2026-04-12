@@ -16,6 +16,7 @@
         packages = [
           (pkgs.julia_111.withPackages [
               "Images"
+              "ImageFiltering"
               "ImageInTerminal"
               #"ImageView" # Broken
               "TestImages"
