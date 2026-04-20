@@ -72,7 +72,7 @@ for dim in [5, 15, 33]
 end
 
 
-# 5) Kernel passa-alta, detectar bordas
+# 5) Kernel passa-alta, edge detection
 function kernelalta(dim)
     half = floor(Int, dim/2)
     kernel = [            -1 .* ones(Int, half, dim)

@@ -27,6 +27,8 @@
               "StatsBase"
               "VideoIO"
               "OpenCV"
+              "FFTW"
+              "InvertedIndices"
             ])
           pkgs.gtk4
           pkgs.glib
