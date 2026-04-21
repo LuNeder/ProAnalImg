@@ -56,7 +56,7 @@ println("Dimensões 2 (diff): ", size(diff_image))
 println("")
 
 # 3) Transformada inversa sem reverter shift
-img_reconstructed3 = real.(ifft(fft_shifted))
+img_reconstructed3 = real.(abs.(ifft(fft_shifted)))
 
 save("$tmppath/reconstructed3.png", map(clamp01nan, Gray.(img_reconstructed3)))
 
@@ -84,7 +84,7 @@ save("$tmppath/fft4.png", Gray.(fft_view(fft4)))
 
 function mkresultimg(fft)
     fft_unshifted = ifftshift(fft)
-    resultimg = real.(ifft(fft_unshifted))
+    resultimg = real.(abs.(ifft(fft_unshifted)))
     return resultimg
 end
 
